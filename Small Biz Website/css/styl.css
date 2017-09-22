@@ -60,3 +60,14 @@ nav ul li a:hover{
 .active{
     background-color:white;
 }
+
+/* index.html */
+img#homepagephoto {
+    width: 600px;
+    
+}
+/*pictures.html*/
+img#homepagephoto {
+    width: 600px;
+}
+
