@@ -63,11 +63,48 @@ nav ul li a:hover{
 
 /* index.html */
 img#homepagephoto {
-    width: 600px;
+    width: 500px;
+     display:block;
+    margin:15px;
+    float:left;
     
 }
-/*pictures.html*/
+/*index.html*/
 img#homepagephoto {
-    width: 600px;
+    width: 500px;
+    display:block;
+    margin:15px;
+    float:left;
+    
+    
+}
+footer{
+    width:100%;
+    background-color:lightcoral;
+    color:white;
+    text-align:center;
+    padding:10px 0;
+    
 }
 
+.keepOpen{
+    clear:both;
+}
+#h2#h2home{
+    float:left;
+}
+#p-home{
+    float:left;
+    width:30%;
+}
+/*about.html*/
+img#Morgan {
+    width: 500px;
+    display:block;
+    margin:15px;
+    float:left;
+}
+#h22{
+    float:left;
+    width:30%;
+}
