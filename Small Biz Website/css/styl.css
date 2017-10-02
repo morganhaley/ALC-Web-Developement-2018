@@ -41,7 +41,10 @@ nav {
     width:100%;
     background-color: lightcoral;
     clear:both;
-    margin:0;  
+    margin:0;
+    font-family: cursive
+        
+    
 }
 nav ul {
     margin:0;
@@ -123,3 +126,39 @@ img#Morgan {
 }
 /*about.html*/
 
+
+    
+}
+/*Pictures*/
+
+div#gallery{
+width:100%
+border:3px dotted green;
+
+}
+
+
+figure{
+    width:250px;
+    float: left;
+  box-shadow: 1px 1px 10px #000;
+    
+    
+
+}
+figure img{
+    width:500px;
+    display: block;
+    margin:10px auto;
+    
+
+}
+figcaption{
+    text-align: center;
+    padding: 10px 0;
+    font-family:cursive;
+    font-size: 25px;
+    
+    
+    
+}
