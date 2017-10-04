@@ -10,7 +10,7 @@ body{
 
 div#container{
     background-color: white;
-    width:1024px;
+    width:2048px;
      /* Centers the Container*/
     margin:auto;  
 }
@@ -67,7 +67,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: lightgray; 
+    background-color: white; 
 }
 .active{
     background-color:white;
@@ -139,7 +139,7 @@ border:3px dotted green;
 
 
 figure{
-    width:250px;
+/*    width:100px;*/
     float: left;
   box-shadow: 1px 1px 10px #000;
     
