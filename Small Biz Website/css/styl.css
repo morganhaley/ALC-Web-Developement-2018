@@ -116,7 +116,7 @@ footer{
 }
 /*about.html*/
 img#Morgan {
-    width: 500px;
+    width: 400px;
     display:block;
     margin:15px;
     float:left;
@@ -204,5 +204,6 @@ div#map h2{
 }
 #aboutpara{
     font-size: 25px;
-    
+    width:auto;
+    word-spacing: 8px;
 }
