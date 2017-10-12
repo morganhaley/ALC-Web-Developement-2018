@@ -133,8 +133,15 @@ img#Morgan {
 /*Pictures*/
 
 div#gallery{
-width:100%
-border:3px dotted green;
+    display: flex;
+    width:100%;
+/*border:3px dotted green;*/
+    
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    
 
 }
 
@@ -143,6 +150,8 @@ figure{
 /*    width:100px;*/
     float: left;
   box-shadow: 1px 1px 10px #000;
+    margin: 10px 15px;
+    flex: 0 0 30%;
     
     
 
