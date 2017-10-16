@@ -110,7 +110,7 @@ footer{
 }
 #p-home{
     float:left;
-    width:30%;
+    width: 20%;
     margin-top:10px;
     
 }
@@ -210,6 +210,8 @@ div#map h2{
 }
 #p-home{
     font-size: 25px;
+    width:auto;
+    word-spacing: 8px;
 }
 #aboutpara{
     font-size: 25px;
