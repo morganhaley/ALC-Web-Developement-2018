@@ -44,6 +44,7 @@ div#blog-post{
     box-shadow: 3px 3px 3px black; 
     font-family: 'Loved by the King', cursive;
 } 
+
 img#post-img{
     align-self:flex-start;
     display: block;
@@ -51,6 +52,7 @@ img#post-img{
     width:150px;
     height: 150px;
     background-color: azure;
+    
     
 } 
 div#post-body{
