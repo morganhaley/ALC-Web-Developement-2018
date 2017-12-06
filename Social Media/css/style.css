@@ -14,7 +14,7 @@ body{
 div#container{
     display:flex;
     flex-flow: column;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: azure;
     max-width:1024px;
@@ -38,8 +38,40 @@ header img#profile_img{
     border-radius: 100%;
     background-color: lightcoral;
     align-self: flex-end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+header div#profile_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    margin-left: 32px;
+}
+div#profile_info h2{
+    width: 100%;
+    order: 1;
+    font-size: 2em;
+}
+div#profile_info h4{
+    width: 100%;
+    order: 2;
+    font-size: 1em;
 }
 
 nav{
-    
+    width: 30%;
+    order: 1;
+    align-content: flex-start;
+
+}
+div#content{
+    width: 7%;
+    order: 2;
+}
+footer{
+    width: 100%;
+    order:3;
 }
