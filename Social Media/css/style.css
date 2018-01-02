@@ -7,7 +7,7 @@ html, body, div, header, h1, h2, h3, h4, h5, h6, nav, ul, ol, li, p, footer{
 }
 
 body{
-    background-color:grey;
+    background-color:lightblue;
     font-family: sans-serif;
 }
 
@@ -16,7 +16,7 @@ div#container{
     flex-flow: column;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: lightcoral;
     max-width:1024px;
     width:80%;
     margin:auto; 
@@ -27,7 +27,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: red;
+    background-color:beige;
     width:100%;
     height:300px;  
 }
@@ -96,14 +96,14 @@ div#content div.post{
     margin: 8px auto;
     width: 85%;
     height: auto;
-    background-color: lightgrey;
+    background-color: white;
     box-shadow: 2px 2px 2px black;
 }
 div#content div.post img.ppp{
     display: block;
     order:1;
     margin:6px;
-    background-color: black;
+    background-color: transparent;
     width:120px;
     height:120px;
     
