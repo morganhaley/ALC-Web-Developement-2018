@@ -7,11 +7,49 @@
         <h1> Adventure Game v0.1</h1>
         <p> By: Morgan Peterson</p>
         <script>
-            Start();
-             
+           
+            var inventory = {
+                warmBread:0,
+                smallKnife:0,
+                steelPistol:0,
+                goldenKey:0,
+                yourMom:0,
+            }
+            
+            var player = {
+                firstname:"",
+                lastname:"",
+                gender:"",
+                age:"",
+                health:100,
+                score:0,
+                moola: 500,
+                
+            }
+            
+            var beast = {
+                description: " A large, harry, red-eyed beast, with huge fangs is trying ot attack me.",
+                damage:10,
+                health: 5,
+            
+                
+            }
+              Start();
             function Start (){
-                var playerName = prompt("What is your name?", "Bubb");
-                alert("Welcome to Adventure, " + playerName);
+                player.firstname = prompt("What is your first name?");
+             
+                player.lastname = prompt("What is your last name?");
+               
+                player.firstname = prompt("What is your first name?");
+                
+                player.gender = prompt("What is your gender?");
+                
+                player.age = prompt("How old are you?");
+            
+                alert("Welcome to Adventure, " + player.firstname +  ""
+                     
+                     + player.lastname+"\n"+player.age);
+               
             var beginAdventure = confirm( "Are you ready to begin?");
                 
                 if(beginAdventure){
@@ -42,6 +80,7 @@
                     var oaw = prompt ( "You begin to go down alley way. You go on or a few blocks unti you reach a small wooden door.");
                     
                         OAW();
+                    
                     
                 }
                 else{
