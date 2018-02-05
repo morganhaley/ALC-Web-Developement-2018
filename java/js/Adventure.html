@@ -14,6 +14,7 @@
                 steelPistol:0,
                 goldenKey:0,
                 yourMom:0,
+                moola: 500,
             }
             
             var player = {
@@ -23,7 +24,7 @@
                 age:"",
                 health:100,
                 score:0,
-                moola: 500,
+               
                 
             }
             
@@ -35,12 +36,11 @@
                 
             }
               Start();
+            
             function Start (){
                 player.firstname = prompt("What is your first name?");
              
                 player.lastname = prompt("What is your last name?");
-               
-                player.firstname = prompt("What is your first name?");
                 
                 player.gender = prompt("What is your gender?");
                 
@@ -65,7 +65,22 @@
                 var city = prompt("You have arrived in Chicago. Tall buildings envelope you in shadow. You see a bakery, a hot dog stand, hotel, and an old alley way. ").toLowerCase();
                 
                 if(city == "bakery" || city == "go to bakery"){
-                    alert ("The flour covered man shakes your hand with a wide smile.");
+                    alert ("The flour covered man shakes your hand with a wide smile. HE offers you some bread.");
+                    var baker = prompt("Would you like to buy bread?").toLowerCase();
+                      
+                    if(baker == "yes" && inventory.moola >= 50){
+                        
+                        inventory.moola = inventory.moola - 50;
+                        
+                    inventory.warmBread = inventory.warmBread +1;
+                        
+                   alert ("You've bought bread! \n Bread = " + inventory.warmBread + "\n Moola = " + inventory.moola);
+                   }
+
+                   else{
+                        alert("You do not have enough moola! Go away!");
+                   }
+                    
                     City();
                 }
                 else if (city == "hotel"|| city == "go to hotel"){
@@ -77,9 +92,9 @@
                     City();
                 }
                 else if (city== "alley" || city=="go to alley"){
-                    var oaw = prompt ( "You begin to go down alley way. You go on or a few blocks unti you reach a small wooden door.");
+                    var oaw = prompt ( "You begin to go down alley way. You go on a few blocks until you reach a small wooden door.");
                     
-                        OAW();
+                   OAW();
                     
                     
                 }
@@ -90,7 +105,7 @@
             }
             
             function OAW (){
-                var oaw = prompt ( "will you open it or turn around.").toLowerCase();
+                var oaw = prompt ( "Would you like to open the door?").toLowerCase();
                 
                 if(oaw == "open" || oaw == "open door"){
                     alert ("The door opens into an old, dusty room. Looks like no one has been here for months.");
@@ -99,13 +114,13 @@
                     
                     switch(door){
                         case "yes":
-                            prompt ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to fo in?");  
+                            prompt ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to go in?");  
                         break;
                         case "no":
-                            alert("You back away from the door to find the alley has been blocked.");   
+                            alert("You are attacked by a beast and killed.");   
                         break;
                         default: 
-                            alert(" You can't do that. Sorry!");
+                            alert(" Game over.");
                             
                             OAW();
                             
@@ -115,7 +130,7 @@
                         var livingroom = prompt ("You enter a livingroom and see a blue door with writing on it, table, and a chimney with a large whole in the bottom. The message says: Enter if you want adventure, turn and go if safe is you want to be.").toLowerCase();
                          
                 if(livingroom == "table" || livingroom == "go to table"){
-                    alert ("On the table is a note. It says: ' Dear Darla, I hate your sticking guts. you make me vomit. You're the scum between my toes. Love, Alphalfa. P.S. If you are reading this ridiculous note, now is a good time to realize you may not be able to leave this house.'");
+                    alert ("On the table is a note. It says: ' Dear Darla, I hate your sticking guts. you make me vomit. You're the scum between my toes. Love, Alphalfa. P.S. If you are reading this ridiculous note, now is a good time to realize you may not be able to leave this house.'");  
                     Livingroom();
                 }
                 else if (livingroom == "blue door"|| livingroom == "go to blue door"){
@@ -124,13 +139,22 @@
                 }
              else if (livingroom == "chimney" || livingroom == "go to chimney"){
                    
-                    
-                       Livingroom();
                     }
                     
                 else if (livingroom == "chimney" || livingroom == "go to chimney"){
-                                alert ("The flooring between your feet crumbles and you fall into the dark whole."); 
+                                alert ("The flooring between your feet crumbles and you fall into the dark whole. You land in a dark, dusty hall way."); 
                             }
+                        function darkHall (){
+                            var darkhall = prompt (" You see two passage ways to the right and left. Which direction will you go?").toLowerCase();
+                            
+                            if(darkhall == "left" || livingroom == "go left"){
+                                
+                                alert ( "a beast has come into your path. You are attacked and killed. Game over.");
+                            }
+                                
+                            else if (livingroom == "right" || livingroom == "go right")
+                            
+                        }
                 }
                
                          
