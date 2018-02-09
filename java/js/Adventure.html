@@ -121,7 +121,7 @@
                     
                     var door = prompt("The door creaks. Should you continue to go in? Yes or no?");
                     
-                   if( door == "yes" || door =="open door")
+                   if( door == "yes", "open" || door =="open door")
                             alert ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to go in?"); 
                        Livingroom(); 
                                 }
@@ -159,7 +159,7 @@
                             
                             if(darkhall == "left" || livingroom == "go left"){
                                 
-                                alert ( "A beast has come into your path. You are attacked and killed. Game over.");
+                                alert ( "You found the treasure and won the game!");
                                 Start();
                             }
                                 
@@ -172,14 +172,28 @@
                             var bluedoor = prompt (" You have chosen to go through the blue door. There are two paths before you. Will you go left or right?")
                             
                             if (bluedoor == "right" ||bluedoor == "go right" ){
-                                alert (" You are led down some stairs. As you go they get more cracked and broken, then turn to stone. You continue to go deeper into the dark whole. Suddenly you stub your foot onto a wooden box. Would you like to open it?");
+                                alert (" You are led down some stairs. As you go they get more cracked and broken, then turn to stone. You continue to go deeper into the dark whole. Suddenly you stub your foot onto a wooden box.");
+                            }
+                                
+                            else if ( bluedoor== "left" || bluedoor== "go left"){
+                                alert ( " The tunnel here is blocked. You must go back.")
+                                
+                                blueDoor ();
+                            }
+                                function woodenBox (){
+                                    var woodenbox = prompt ("You attempt to pick up the chest, but it is too heavy. Would you like to break it open?").toLowerCase();
+                                    
+                                    if (woodenbox=="yes" || woodenbox=="open box"){
+                                        alert ("Congrats! You found the treasure and won the game!");
+                                    }
+                                }
                                 
                                 
                             }
                         
                                         
                         }
-                    }
+                    
                 }
             
                          
