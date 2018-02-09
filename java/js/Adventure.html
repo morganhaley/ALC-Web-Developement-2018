@@ -35,6 +35,10 @@
             
                 
             }
+            
+            var invList = function(){
+                alert ("moola = "+ inventory.moola + "\nwarmBread = " + inventory.warmBread)
+            }
               Start();
             
             function Start (){
@@ -65,7 +69,7 @@
                 var city = prompt("You have arrived in Chicago. Tall buildings envelope you in shadow. You see a bakery, a hot dog stand, hotel, and an old alley way. ").toLowerCase();
                 
                 if(city == "bakery" || city == "go to bakery"){
-                    alert ("The flour covered man shakes your hand with a wide smile. HE offers you some bread.");
+                    alert ("The flour covered man shakes your hand with a wide smile. He offers you some bread.");
                     var baker = prompt("Would you like to buy bread?").toLowerCase();
                       
                     if(baker == "yes" && inventory.moola >= 50){
@@ -97,6 +101,11 @@
                    OAW();
                     
                     
+                    
+                }
+               else if (city=="inventory" || village=="show inventory"){
+                    invList();
+                    City();
                 }
                 else{
                     alert ("I don't understand " + city);
@@ -107,30 +116,31 @@
             function OAW (){
                 var oaw = prompt ( "Would you like to open the door?").toLowerCase();
                 
-                if(oaw == "open" || oaw == "open door"){
+                if(oaw == "yes" || oaw == "open door"){
                     alert ("The door opens into an old, dusty room. Looks like no one has been here for months.");
                     
                     var door = prompt("The door creaks. Should you continue to go in? Yes or no?");
                     
-                    switch(door){
-                        case "yes":
-                            prompt ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to go in?");  
-                        break;
-                        case "no":
-                            alert("You are attacked by a beast and killed.");   
-                        break;
-                        default: 
-                            alert(" Game over.");
+                   if( door == "yes" || door =="open door")
+                            alert ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to go in?"); 
+                       Livingroom(); 
+                                }
+                 
+                    
+                       else if ( door == "no" || door == " go back ") {
+                            alert("You are attacked by a beast and killed.Game over.");  
                             
-                            OAW();
+                            
+                            Start();
                             
                    }
+            }
                     
                     function Livingroom (){
-                        var livingroom = prompt ("You enter a livingroom and see a blue door with writing on it, table, and a chimney with a large whole in the bottom. The message says: Enter if you want adventure, turn and go if safe is you want to be.").toLowerCase();
+                        var livingroom = prompt ("You enter a livingroom and see a blue door with writing on it, table, and a chimney with a large whole in the bottom. ").toLowerCase();
                          
                 if(livingroom == "table" || livingroom == "go to table"){
-                    alert ("On the table is a note. It says: ' Dear Darla, I hate your sticking guts. you make me vomit. You're the scum between my toes. Love, Alphalfa. P.S. If you are reading this ridiculous note, now is a good time to realize you may not be able to leave this house.'");  
+                    alert ("On the table is a note. It says: ' Dear Darla, I hate your sticking guts. You make me vomit. You're the scum between my toes. Love, Alphalfa. P.S. If you are reading this ridiculous note, now is a good time to realize you may not be able to leave this house.'");  
                     Livingroom();
                 }
                 else if (livingroom == "blue door"|| livingroom == "go to blue door"){
@@ -149,20 +159,35 @@
                             
                             if(darkhall == "left" || livingroom == "go left"){
                                 
-                                alert ( "a beast has come into your path. You are attacked and killed. Game over.");
+                                alert ( "A beast has come into your path. You are attacked and killed. Game over.");
+                                Start();
                             }
                                 
                             else if (livingroom == "right" || livingroom == "go right")
-                            
-                        }
-                }
-               
-                         
+                                alert ("You walk aways in to find an old chest.")
                         
+                             darkHall ();
+                        
+                        function blueDoor (){
+                            var bluedoor = prompt (" You have chosen to go through the blue door. There are two paths before you. Will you go left or right?")
+                            
+                            if (bluedoor == "right" ||bluedoor == "go right" ){
+                                alert (" You are led down some stairs. As you go they get more cracked and broken, then turn to stone. You continue to go deeper into the dark whole. Suddenly you stub your foot onto a wooden box. Would you like to open it?");
+                                
+                                
+                            }
+                        
+                                        
+                        }
                     }
+                }
+            
+                         
+                            
+                    
                     
                  
-                  }
+                  
                          
             
             
