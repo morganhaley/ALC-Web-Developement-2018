@@ -97,16 +97,19 @@
                 }
                 else if (city== "alley" || city=="go to alley"){
                     var oaw = prompt ( "You begin to go down alley way. You go on a few blocks until you reach a small wooden door.");
+                }
                     
+                else{
+                    alert ("I don't understand " + city);
+                    }
                    OAW();
                     
                     
-                    
-                }
-               else if (city=="inventory" || village=="show inventory"){
-                    invList();
+                                    
+              if (city=="inventory" || city=="show inventory"){
+                   invList();
                     City();
-                }
+              }
                 else{
                     alert ("I don't understand " + city);
                     City();
@@ -123,7 +126,7 @@
                     
                    if( door == "yes", "open" || door =="open door")
                             alert ("You walk in slowly and carefully. In front of you is another door leading to the livingroom. Do you want to go in?"); 
-                       Livingroom(); 
+                      Livingroom();
                                 }
                  
                     
@@ -145,14 +148,17 @@
                 }
                 else if (livingroom == "blue door"|| livingroom == "go to blue door"){
                     alert ("The message says: Enter if you want adventure, turn and go if safe is you want to be.");
-                    Livingroom ();
-                }
+                   blueDoor();
+                     }
+                       
+                        
              else if (livingroom == "chimney" || livingroom == "go to chimney"){
                    
                     }
                     
                 else if (livingroom == "chimney" || livingroom == "go to chimney"){
                                 alert ("The flooring between your feet crumbles and you fall into the dark whole. You land in a dark, dusty hall way."); 
+                    darkHall();
                             }
                         function darkHall (){
                             var darkhall = prompt (" You see two passage ways to the right and left. Which direction will you go?").toLowerCase();
@@ -163,8 +169,9 @@
                                 Start();
                             }
                                 
-                            else if (livingroom == "right" || livingroom == "go right")
+                            else if (livingroom == "right" || livingroom == "go right"){
                                 alert ("You walk aways in to find an old chest.")
+                            }
                         
                              darkHall ();
                         
@@ -185,6 +192,7 @@
                                     
                                     if (woodenbox=="yes" || woodenbox=="open box"){
                                         alert ("Congrats! You found the treasure and won the game!");
+                                        Start();
                                     }
                                 }
                                 
