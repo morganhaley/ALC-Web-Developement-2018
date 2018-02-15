@@ -92,8 +92,8 @@
                     City();
                 }
                 else if (city == "hot dog stand" || city == "go to hot dog stand"){
-                     alert ("There is a sign that says ' Out of hot dogs, be back soon!'");
-                    City();
+                     alert ("There is a sign that says ' Out of hot dogs, be back soon! You trip over the sidewal, crack your skull open, and die.'");
+                   Start();
                 }
                 else if (city== "alley" || city=="go to alley"){
                     var oaw = prompt ( "You begin to go down alley way. You go on a few blocks until you reach a small wooden door.");
@@ -140,7 +140,7 @@
             }
                     
                     function Livingroom (){
-                        var livingroom = prompt ("You enter a livingroom and see a blue door with writing on it, table, and a chimney with a large whole in the bottom. ").toLowerCase();
+                        var livingroom = prompt ("You enter a livingroom and see a blue door with writing on it, and a table. ").toLowerCase();
                          
                 if(livingroom == "table" || livingroom == "go to table"){
                     alert ("On the table is a note. It says: ' Dear Darla, I hate your sticking guts. You make me vomit. You're the scum between my toes. Love, Alphalfa. P.S. If you are reading this ridiculous note, now is a good time to realize you may not be able to leave this house.'");  
@@ -148,61 +148,62 @@
                 }
                 else if (livingroom == "blue door"|| livingroom == "go to blue door"){
                     alert ("The message says: Enter if you want adventure, turn and go if safe is you want to be.");
-                   blueDoor();
+                   darkHall();
                      }
                        
                         
-             else if (livingroom == "chimney" || livingroom == "go to chimney"){
+            // else if (livingroom == "chimney" || livingroom == "go to chimney"){
                    
                     }
                     
-                else if (livingroom == "chimney" || livingroom == "go to chimney"){
-                                alert ("The flooring between your feet crumbles and you fall into the dark whole. You land in a dark, dusty hall way."); 
-                    darkHall();
-                            }
-                        function darkHall (){
-                            var darkhall = prompt (" You see two passage ways to the right and left. Which direction will you go?").toLowerCase();
+                //else if (livingroom == "chimney" || livingroom == "go to chimney"){
+                                //alert ("The flooring between your feet crumbles and you fall into the dark whole. You land in a dark, dusty hall way."); 
+                   // darkHall();
                             
-                            if(darkhall == "left" || livingroom == "go left"){
+                        function darkHall (){
+                            var darkhall = prompt (" You see two passage ways to the right and left. The right is blocked. You must go left. Type'Left'").toLowerCase();
+                            
+                            if (darkhall == "left" || livingroom == "go left"){
                                 
                                 alert ( "You found the treasure and won the game!");
                                 Start();
                             }
                                 
                             else if (livingroom == "right" || livingroom == "go right"){
-                                alert ("You walk aways in to find an old chest.")
+                                alert ("You are dead. A beast killed you.")
+                                Start();
                             }
                         
-                             darkHall ();
-                        
-                        function blueDoor (){
-                            var bluedoor = prompt (" You have chosen to go through the blue door. There are two paths before you. Will you go left or right?")
                             
-                            if (bluedoor == "right" ||bluedoor == "go right" ){
-                                alert (" You are led down some stairs. As you go they get more cracked and broken, then turn to stone. You continue to go deeper into the dark whole. Suddenly you stub your foot onto a wooden box.");
-                            }
+                        
+                      //  function blueDoor (){
+                          //  var bluedoor = prompt (" You have chosen to go through the blue door. There are two paths before you. There is a tunnel leading left. Type 'left'.")
+                            
+                          //  if (bluedoor == "right" ||bluedoor == "go right" ){
+                             //   alert (" You are led down some stairs. As you go they get more cracked and broken, then turn to stone. You continue to go deeper into the dark whole. Suddenly you stub your foot onto a wooden box.");
+                           // }
                                 
-                            else if ( bluedoor== "left" || bluedoor== "go left"){
-                                alert ( " The tunnel here is blocked. You must go back.")
+                           // else if ( bluedoor== "left" || bluedoor== "go left"){
+                            //    alert ( " The tunnel here is blocked. You must go back.")
                                 
-                                blueDoor ();
-                            }
-                                function woodenBox (){
-                                    var woodenbox = prompt ("You attempt to pick up the chest, but it is too heavy. Would you like to break it open?").toLowerCase();
+                             //   blueDoor ();
+                          //  }
+                                //function woodenBox (){
+                                  //  var woodenbox = prompt ("You attempt to pick up the chest, but it is too heavy. Would you like to break it open?").toLowerCase();
                                     
-                                    if (woodenbox=="yes" || woodenbox=="open box"){
-                                        alert ("Congrats! You found the treasure and won the game!");
-                                        Start();
+                                   // if (woodenbox=="yes" || woodenbox=="open box"){
+                                      //  alert ("Congrats! You found the treasure and won the game!");
+                                       // Start();
                                     }
-                                }
                                 
                                 
-                            }
+                                
+                            
                         
                                         
-                        }
+                        
                     
-                }
+                
             
                          
                             
