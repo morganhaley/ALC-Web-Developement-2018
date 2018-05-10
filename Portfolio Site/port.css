@@ -8,9 +8,15 @@ body{
     
 }
 div#content1{
+    display: flex;
+/*
+    flex-direction: row;
+    flex-wrap: wrap;
+*/
+    flex-flow: row;
     margin: 10px;
-    width: 900px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     text-align: center;
 }
 
@@ -43,9 +49,33 @@ img#morgan{
     width:400px;
     height:500px;
     margin:10px;
-    align-content: center;
+    order:1;
+    align-self: flex-start; 
     
 }
+div#portinfo{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+/*
+    justify-content: center;
+    
+*/
+    order: 2;
+}
+h2#h2home{
+    height: 30px;
+    margin:0;
+    align-self: flex-start;
+    order:1;
+    
+}
+p#intopara{
+    width:50%;
+    order: 2;
+    
+}
+
 nav {
     width:100%;
     background-color: lightgray;
@@ -98,10 +128,7 @@ footer{
     clear:both;
 }
 
-#h22{
-    float:left;
-    width:30%;
-}
+
 
 
 #gallery{    
@@ -255,7 +282,6 @@ html {
     img#morgan{
     height: 400px;
     width: 300px;
-    
         }
     
     body{
@@ -267,18 +293,25 @@ html {
 }
     div#content1{
     margin: 10px;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height:auto;
     text-align: left;
         
 }
-    img{
-        height: 200px;
-        width:150px;
+    img#morgan{
+        height: 300px;
+        width:250px;
+        display: block;
+        margin:auto;
+        order: 2;
     }
     
-   {
-        
-    }
+h2#h2home{
+    height: 30px;
+    margin:0;
+    align-self: flex-start;
+    order:1;
+    
+}
   
 
