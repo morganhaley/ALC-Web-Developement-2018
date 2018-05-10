@@ -9,15 +9,15 @@ body{
 }
 div#content1{
     margin: 10px;
-    width: 500px;
-    height: 200px;
-    text-align: left;
+    width: 900px;
+    height: 100px;
+    text-align: center;
 }
 
 div#container{
     background-color: white;
-    width:2048px;
-    margin:auto;  
+    width:auto;
+    margin:auto;
 }
 
 header{
@@ -34,7 +34,6 @@ header h1 {
     text-align:center;
     padding-top:50px;
     color:lightskyblue;
-    margin:0;
     font-size: 60px;
     
 
@@ -42,7 +41,9 @@ header h1 {
 }
 img#morgan{
     width:400px;
+    height:500px;
     margin:10px;
+    align-content: center;
     
 }
 nav {
@@ -50,7 +51,9 @@ nav {
     background-color: lightgray;
     clear:both;
     margin:0;
-    font-family: cursive
+    font-family: cursive;
+/*    padding-left:300px; */
+
     
         
     
@@ -250,10 +253,32 @@ html {
 @media only screen and (max-width: 560px) {
     
     img#morgan{
-    width:50pxpx;
-    margin-left: 700px;
-
-    }
+    height: 400px;
+    width: 300px;
+    
+        }
+    
+    body{
+    background-color: lightpink;
+    margin:0;
+    padding:0;
+    font-family: cursive;
     
 }
+    div#content1{
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+        
+}
+    img{
+        height: 200px;
+        width:150px;
+    }
+    
+   {
+        
+    }
+  
 
