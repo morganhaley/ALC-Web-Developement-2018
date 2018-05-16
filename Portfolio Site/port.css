@@ -205,6 +205,9 @@ h2#h2-contact{
 form#form-contact{
     margin-left:10px;
     
+
+    
+    
 }
 form input{
     margin-bottom:10px;
@@ -336,5 +339,6 @@ h2#h2home{
 /*    order: 2;*/
     align-self: center; 
 }
+   
   
 
